@@ -1,0 +1,5 @@
+type mutation ApplyKYCdocuments($title: KYCInput!, id1_number: KYCInput!) {
+ uploadKYCdocuments(title: $title, id1_number: $id1_number): [Error!]
+}
+
+

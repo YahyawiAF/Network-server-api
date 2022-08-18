@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>ENOCH-Web</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+        <style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+			body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+			img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+			/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+			body{margin:0; padding:0;}
+			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+			table{border-collapse:collapse !important;}
+			body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+			/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+
+			/* ========== Page Styles ========== */
+
+			#templateContainer{width:550px;}
+
+			body, #bodyTable{
+				/*@editable*/background-color:#D2D2D2;
+				font-family: 'Poppins', sans-serif;
+			}
+
+
+			#templateContainer{			
+				   /*@editable*/ background: #fff;
+			}
+
+			#templatePreheader{
+				/*@editable*/background-color:#F4F4F4;
+				/*@editable*/border-bottom:1px solid #CCCCCC;
+			}
+
+			.preheaderContent{
+				/*@editable*/color:#808080;
+				
+				/*@editable*/font-size:10px;
+				/*@editable*/line-height:125%;
+				/*@editable*/text-align:left;
+			}
+
+
+				.headerContent{
+			
+				/*@editable*/vertical-align: middle;
+				/*@editable*/color:#505050;
+				
+				/*@editable*/font-size:20px;
+				/*@editable*/font-weight:bold;
+				/*@editable*/padding-left:32px;
+				
+				    /*@editable*/height: 93px;
+				
+			}
+
+
+			#headerImage{
+				/*@editable*/height:auto;
+				/*@editable*/max-width:550px;
+			}
+
+			/* ========== Body Styles ========== */
+
+
+			
+
+			.bodyContent{
+				/*@editable*/color:#000;
+				
+				/*@editable*/font-size:16px;
+				/*@editable*/font-weight:400;						
+				/*@editable*/line-height: 28px;
+				 /*@editable*/padding: 0 80px;
+			}
+			.bodyContent h1{
+				font-size: 14px;
+				line-height: 28px;
+				/*@editable*/font-weight: 400;
+				/*@editable*/color:#000;
+				/*@editable*/margin-top: 70px;
+				/*@editable*/margin-bottom: 0px;
+			}
+			.bodyContent h1 span{
+				font-weight:700;
+			}
+			.bodyContent h2{
+				/*@editable*/font-size: 24px;
+				/*@editable*/font-weight: 700;
+				/*@editable*/color:#000;
+				/*@editable*/margin-top: 0px;
+				/*@editable*/margin-bottom: 12px;
+				/*@editable*/line-height: 36px;
+			}
+			.bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/color:#000;
+				/*@editable*/font-weight:normal;
+				/*@editable*/text-decoration:underline;
+			}
+
+			.bodyContent img{
+				/*@editable*/display:inline;
+				/*@editable*/height:auto;
+			}
+
+			/* ========== Footer Styles ========== */
+
+			/**
+			* @tab Footer
+			* @section footer style
+			* @tip Set the background color and borders for your email's footer area.
+			* @theme footer
+			*/
+			#templateFooter{
+				margin: 25px;
+				width: 550px;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+			}
+
+			/**
+			* @tab Footer
+			* @section footer text
+			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+			* @theme footer
+			*/
+			.footerContent{
+				color: #fff;
+				font-weight: 500;
+				
+				font-size: 14px;
+				padding-top: 135px;
+				padding-bottom: 10px;
+				text-align: center;
+				line-height: 20px;
+			}
+			td.footerUnsubscribe {
+				color: #A8A8A8;
+				
+				font-size: 12px;
+				padding-bottom: 22px;
+				padding-left: 0;
+				text-align: center;
+				line-height: 21px;
+				font-weight: 400;
+			}
+			td.footerUnsubscribe a{		
+				text-decoration:none;
+			}
+			/**
+			* @tab Footer
+			* @section footer link
+			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+			*/
+			.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
+				/*@editable*/ color:#606060;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+				    word-break: break-all;
+			}
+
+			td.tiny-button {
+					text-align:center;
+				}
+				td.tiny-button  a{
+					background: #3274ED;
+					border-radius: 3px;
+					padding: 11px 22px;
+					text-align: center;
+					color: #fff;
+					text-decoration: none;
+					font-size: 14px;
+					font-weight: 700;
+					
+					line-height: 16px;
+				}
+				
+				#footer{
+				background: #fff;
+				}
+				#footer .f-line1{
+					text-align: center;
+					font-size: 10px;
+					padding-bottom: 15px;
+					
+					font-weight:500;
+					color: #808080;
+				}
+				td.contact-hlp {
+					width: 100%;
+					text-align: center;
+					font-size: 10px;
+					font-weight: 600;
+					
+					padding-top:27px;
+
+				}
+				td.contact-hlp a{
+					color:#000;
+					padding-left:10px;
+					padding-right:10px;
+					font-weight:600;
+				}
+				.bordr-right{
+					border-right: 1px solid #707070;
+					text-decoration: none;
+				}
+				td.contact-hlp1 {
+				    float: left;
+					font-size: 10px;
+					font-weight: 600;
+					
+					border-left: 1px solid #707070;
+					padding-left: 20px;
+				}
+				td.social-ico a{
+					padding:0px 10px;
+				}
+				i.fab{
+					background: linear-gradient(180deg, #FF5050 26.52%, #FB54AD 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					font-size:12px;
+				}
+				.social-ico{
+					padding-top:10px;
+					padding-bottom:20px;
+				}
+		</style>
+    </head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    	<center>
+        	<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+            	<tr>
+                	<td align="center" valign="top" id="bodyCell">
+                    	<!-- BEGIN TEMPLATE // -->
+                    	<table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
+                        	
+                        	<tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN HEADER // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
+                                        <tr>
+                                            <td valign="top" class="headerContent">
+                                            	<img src="https://api.enoch.co.uk/api/v1/images/mail/logo.png" style="max-width:155px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END HEADER -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                	
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+                                        <tr>
+                                            <td valign="top" class="bodyContent" mc:edit="body_content">
+                                                <h1>Hi ({{name}}!)</h1>
+												<p style="font-weight: normal;font-size: 18px;line-height: 28px;color: #000000;margin-bottom:20px;margin-top:20px;">Click Here to  <br/>
+												<span><a href={{link}} style="font-weight: 700;text-decoration: none;">verify your email</a></span> </p>           
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                </td>
+                            </tr>
+							<tr>
+								<td class="bodyContent" style="font-weight: normal;font-size: 14px;line-height: 22px;color: #000000;margin: 0px;">
+								<span> Thanks,</span><br/>
+								<span>Team ENOCH-Web</span><br/>
+								<span style="text-decoration:underline"><b>help@enochweb.co.uk |</b></span> Help Center </span><br/>
+								<span><a href="https://enochweb.co.uk/"  style="text-decoration:none" target="_blank">www.enochweb.co.uk</a></span>
+								</td>								
+							</tr>
+							<tr>
+								<td class="social-ico bodyContent"><a href="javascript:void(0);" style="padding-left:0px;"><i class="fab fa-facebook-f"></i></a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a></td>
+							</tr>
+							<tr>
+							
+								<td class="bodyContent" style="font-weight: normal;font-size: 11px;line-height: 140%;color: #A8A8A8;">
+									You recevied this email because you have subscribed to <a href="https://enochweb.co.uk/" style="color:#FF5051;text-decoration:none;">www.enochweb.co.uk</a> <br>If you no longer wish to receive emails please <a href="javascript:void(0);" style="color:#0779FF;text-decoration:none;">Unsubscribe</a>
+								</td>
+							</tr>
+							<tr>
+							
+								<td class="bodyContent" style="font-weight: normal;font-size: 11px;line-height: 16px;color: #808080;padding-top: 6px;">
+									Copyrights @ 2021, ENOCH-Web. All Rights Reserved.
+								</td>
+							</tr>
+							<tr>
+								<td><img src="https://api.enochweb.co.uk/api/v1/images/mail/bdy-bg.jpg" alt="body-bg"/></td>
+							</tr>
+                        </table>
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+				
+            </table>
+        </center>
+    </body>
+</html>
